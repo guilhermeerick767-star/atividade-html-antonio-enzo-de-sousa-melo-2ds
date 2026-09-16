@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Define o título que aparece na aba do navegador -->
+    <title>Formulário elaborado</title>
+
+    <style>
+
+        /* Define a fonte principal de todo o texto da página */
+        body {
+            font-family: Arial;
+        }
+
+        /* Define uma fonte diferente para o título */
+        h1 {
+            font-family: Georgia;
+        }
+
+        /* Cria um espaço abaixo de cada grupo (fieldset) */
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        /* Define um pequeno espaço abaixo dos campos de texto */
+        input {
+            margin-bottom: 5px;
+        }
+
+        /* Define o tamanho da área onde será escrito o mini-currículo */
+        textarea {
+            width: 330px;
+            height: 80px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Formulário</h1>
+
+    <!-- Início do formulário -->
+    <form>
+
+
+        <!-- Primeiro grupo do formulário -->
+        <fieldset>
+
+            <!-- Nome que aparece na borda do grupo -->
+            <legend>Dados pessoais</legend>
+
+
+            <!-- Campo para digitar o nome -->
+            Nome:
+            <input type="text">
+
+            <!-- Quebra de linha -->
+            <br>
+
+
+            <!-- Campo para digitar o endereço -->
+            Endereço:
+            <input type="text">
+
+            <!-- Quebra de linha -->
+            <br>
+
+
+            <!-- Campo para digitar a cidade -->
+            Cidade:
+            <input type="text">
+
+            <!-- Quebra de linha -->
+            <br>
+
+
+            <!-- Campo para escolher o estado -->
+            Estado:
+
+            <!-- Cria uma lista de opções -->
+            <select>
+
+                <!-- Primeira opção da lista -->
+                <option>São Paulo</option>
+
+                <!-- Segunda opção -->
+                <option>Rio de Janeiro</option>
+
+                <!-- Terceira opção -->
+                <option>Minas Gerais</option>
+
+                <!-- Quarta opção -->
+                <option>Piauí</option>
+
+            </select>
+
+        </fieldset>
+
+
+        <!-- Segundo grupo do formulário -->
+        <fieldset>
+
+            <!-- Nome que aparece na borda do segundo grupo -->
+            <legend>Dados profissionais</legend>
+
+
+            <!-- Texto indicando a pergunta -->
+            Natureza do Cargo
+
+            <!-- Pula uma linha -->
+            <br>
+
+
+            <!--
+                Radio button.
+                O name="cargo" faz com que apenas uma opção
+                possa ser escolhida.
+                O checked deixa Gerência marcada inicialmente.
+            -->
+            <input type="radio" name="cargo" checked>
+            Gerência
+
+
+            <!-- Opção Financeiro -->
+            <input type="radio" name="cargo">
+            Financeiro
+
+
+            <!-- Opção Recepção -->
+            <input type="radio" name="cargo">
+            Recepção
+
+
+            <!-- Opção Administrativo -->
+            <input type="radio" name="cargo">
+            Administrativo
+
+
+            <!-- Opção Jurídico -->
+            <input type="radio" name="cargo">
+            Jurídico
+
+
+            <!-- Pula duas linhas -->
+            <br><br>
+
+
+            <!-- Texto indicando a área de interesse -->
+            Área de interesse
+
+            <!-- Pula uma linha -->
+            <br>
+
+
+            <!--
+                Checkbox permite marcar várias opções
+                ao mesmo tempo.
+            -->
+
+            <!-- Opção Computação -->
+            <input type="checkbox">
+            Computação
+
+
+            <!-- Opção Biologia -->
+            <input type="checkbox">
+            Biologia
+
+
+            <!-- Opção Meio Ambiente -->
+            <input type="checkbox">
+            Meio Ambiente
+
+
+            <!-- Opção Engenharia -->
+            <input type="checkbox">
+            Engenharia
+
+
+            <!-- Opção História -->
+            <input type="checkbox">
+            História
+
+
+            <!-- Pula duas linhas -->
+            <br><br>
+
+
+            <!-- Texto indicando onde colocar o mini-currículo -->
+            Mini-currículo:
+
+            <!-- Pula uma linha -->
+            <br>
+
+
+            <!--
+                textarea cria uma área maior
+                para escrever textos.
+            -->
+            <textarea></textarea>
+
+
+        </fieldset>
+
+
+        <!--
+            Botão Enviar.
+            type="submit" faz o formulário ser enviado.
+        -->
+        <input type="submit" value="Enviar">
+
+
+        <!--
+            Botão Limpar.
+            type="reset" limpa os campos preenchidos.
+        -->
+        <input type="reset" value="Limpar">
+
+
+    <!-- Fim do formulário -->
+    </form>
+
+
+<!-- Fim do conteúdo da página -->
+</body>
+
+<!-- Fim do documento HTML -->
+</html>
